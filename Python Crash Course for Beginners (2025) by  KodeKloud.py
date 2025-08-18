@@ -10079,4 +10079,65 @@ NameError: name 'firsFive' is not defined. Did you mean: 'firstFive'?
 >>> del(heightNewList[:])
 >>> print(heightNewList)
 []
->>>
+>>> list = ]
+  File "<python-input-0>", line 1
+    list = ]
+           ^
+SyntaxError: unmatched ']'
+>>> list = ["D", "C", "B", "T", "J", "I"]
+>>> print ("C" in list)
+True
+>>> print ("P" in list)
+False
+>>> print ("b" not in list)
+True
+>>> print ("B" not in list)
+False
+>>> print ("Z" not in list)
+True
+>>> animals = [["Lion", "Tiger", "Cheetah", "Wolf"], ]]
+  File "<python-input-7>", line 1
+    animals = [["Lion", "Tiger", "Cheetah", "Wolf"], ]]
+                                                      ^
+SyntaxError: unmatched ']'
+>>>> animals = [["Lion", "Tiger", "Cheetah", "Wolf"], ["Bull", "Dear", "Goat", "Giraffe"], ["Eagle", "Parrot", "Pigeon", "Nightingale"], ["Gold fish", "shar>>> animals = [["Lion", "Tiger", "Cheetah", "Wolf"], ["Bull", "Dear", "Goat", "Giraffe"], ["Eagle", "Parrot", "Pigeon", "Nightingale"], ["Gold fish", "Shar\k, "Whale", "Dolphin"]]
+  File "<python-input-8>", line 1
+    animals = [["Lion", "Tiger", "Cheetah", "Wolf"], ["Bull", "Dear", "Goat", "Giraffe"], ["Eagle", "Parrot", "Pigeon", "Nightingale"], ["Gold fish", "Shark, "Whale", "Dolphin"]]
+                                                                                                                                                                               ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> animals = [["Lion", "Tiger", "Cheetah", "Wolf"], ["Bull", "Dear", "Goat", "Giraffe"], ["Eagle", "Parrot", "Pigeon", "Nightingale"], ["Gold fish", "Shar\k, "Whale", "Dolphin"]]
+  File "<python-input-9>", line 1
+    animals = [["Lion", "Tiger", "Cheetah", "Wolf"], ["Bull", "Dear", "Goat", "Giraffe"], ["Eagle", "Parrot", "Pigeon", "Nightingale"], ["Gold fish", "Shark, "Whale", "Dolphin"]]
+                                                                                                                                                                               ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> animals = [["Lion", "Tiger", "Cheetah", "Wolf"], ["Bull", "Dear", "Goat", "Giraffe"], ["Eagle", "Parrot", "Pigeon", "Nightingale"], ["Goldfish", "Shark\, "Whale", "Dolphin"]]
+  File "<python-input-10>", line 1
+    animals = [["Lion", "Tiger", "Cheetah", "Wolf"], ["Bull", "Dear", "Goat", "Giraffe"], ["Eagle", "Parrot", "Pigeon", "Nightingale"], ["Goldfish", "Shark, "Whale", "Dolphin"]]
+                                                                                                                                                                              ^
+SyntaxError: unterminated string literal (detected at line 1)
+>>> animals = [["Lion", "Tiger", "Cheetah", "Wolf"], ["Bull", "Dear", "Goat", "Giraffe"], ["Eagle", "Parrot", "Pigeon", "Nightingale"], ["Tuna", "Shark", "\Whale", "Dolphin"]]
+>>> print animals[3, 1]
+  File "<python-input-12>", line 1
+    print animals[3, 1]
+    ^^^^^^^^^^^^^^^^^^^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
+>>> print (animals[3, 1])
+Traceback (most recent call last):
+  File "<python-input-13>", line 1, in <module>
+    print (animals[3, 1])
+           ~~~~~~~^^^^^^
+TypeError: list indices must be integers or slices, not tuple
+>>> print (animals[3,1])
+Traceback (most recent call last):
+  File "<python-input-14>", line 1, in <module>
+    print (animals[3,1])
+           ~~~~~~~^^^^^
+TypeError: list indices must be integers or slices, not tuple
+>>> print (animals[3][1])
+Shark
+>>> threeDArray = [[['A', 'B'], ['C', 'D'], ['E', 'F'], ['G', 'H']], [['I', 'J'], ['K', 'L'], ['M', 'N'], ['O', 'P']], [['Q', 'R'], ['S', 'T'], ['U', 'V'],\ ['W', 'X']]]
+>>> threeDArray = [[['A', 'B'], ['C', 'D'], ['E', 'F'], ['G', 'H']], [['I', 'J'], ['K', 'L'], ['M', 'N'], ['O', 'P']], [['Q', 'R'], ['S', 'T'], ['U', 'V'],\ ['W', 'X']], [['A', 'B'], ['C', 'D'], ['E', 'F'], ['G', 'H']], [['I', 'J'], ['K', 'L'], ['M', 'N'], ['O', 'P']], [['Q', 'R'], ['S', 'T'], ['U', 'V'],\ ['W\', 'X']]]
+  File "<python-input-17>", line 1
+    threeDArray = [[['A', 'B'], ['C', 'D'], ['E', 'F'], ['G', 'H']], [['I', 'J'], ['K', 'L'], ['M', 'N'], ['O', 'P']], [['Q', 'R'], ['S', 'T'], ['U', 'V'], ['W', 'X']], [['A', 'B'], ['C', 'D'], ['E', 'F'], ['G', 'H']], [['I', 'J'], ['K', 'L'], ['M', 'N'], ['O', 'P']], [['Q', 'R'], ['S', 'T'], ['U', 'V'],\ ['W', 'X']]]
+                                                                                                                                                                                                                                                                                                                  ^
+SyntaxError: unexpected character after line continuation character
