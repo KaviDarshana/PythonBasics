@@ -10141,3 +10141,423 @@ Shark
     threeDArray = [[['A', 'B'], ['C', 'D'], ['E', 'F'], ['G', 'H']], [['I', 'J'], ['K', 'L'], ['M', 'N'], ['O', 'P']], [['Q', 'R'], ['S', 'T'], ['U', 'V'], ['W', 'X']], [['A', 'B'], ['C', 'D'], ['E', 'F'], ['G', 'H']], [['I', 'J'], ['K', 'L'], ['M', 'N'], ['O', 'P']], [['Q', 'R'], ['S', 'T'], ['U', 'V'],\ ['W', 'X']]]
                                                                                                                                                                                                                                                                                                                   ^
 SyntaxError: unexpected character after line continuation character
+>>> moraPinnacles = [
+... [
+...     ["Tharindi", "Nethmi", "Chanithi", "Oshadi"],
+...     ["Ramodya", "Sewwandi", "Nickey", "Thilini"],
+...     ["Piyumi", "Nisansala", "Nimasha", "Dilmini"],
+...     ["Akila", "Ama", "Induwari", "Hansi"]
+... ],
+... [
+...     ["Dhanushika", "Chamodya", "Dihini", "Gayumi"],
+...     ["Fathima", "Geethika", "Hansika", "Ashani"],
+...     ["Hasini", "Hiruni", "Inodya", "Isuri"],
+...     ["Umeshika", "Jayadini", "Kaveesha", "Mafasa"]
+... ],
+... [
+...     ["Manuthi", "Methmi", "Nimna", "Imaya"],
+...     ["Paramee", "Prasadee", "Prathibha", "Rukshana"],
+...     ["Senithi", "Sharmila", "Darshani", "Ushani"],
+...     ["Vimasha", "Yasasmi", "Manusarani", "Vishwadari"]
+... ],
+... [
+...     ["Sandinma", "Pethmi", "Kavindya", "Dewmini"],
+...     ["Milasha", "Sehansa", "Fawmy", "Vibodha"],
+...     ["Madhushani", "Nashfa", "Dilukshi", "Amanda"],
+...     ["Kivindi", "Sajini", "Sanduni", "Shalini"]
+... ]
+... ]
+>>> print (moraPinnacles[3][3][0)
+  File "<python-input-1>", line 1
+    print (moraPinnacles[3][3][0)
+                                ^
+SyntaxError: closing parenthesis ')' does not match opening parenthesis '['
+>>> print (moraPinnacles[3][3][0])
+Kivindi
+>>> def input_age():
+...     return int(input("Enter your age: "))
+... age1 = input_age()
+... age2 = input_age()
+... age3 = input_age()
+... age4 = input_age()
+... age5 = input_age()
+...
+Enter your age: 25
+Enter your age: 22
+Enter your age: 20
+Enter your age: 17
+Enter your age: 28
+>>> print (age1)
+25
+>>> print(age2)
+22
+>>> print(age3)
+20
+>>> print(age4)
+17
+>>> print(age5)
+28
+>>> input_num()
+Traceback (most recent call last):
+  File "<python-input-9>", line 1, in <module>
+    input_num()
+    ^^^^^^^^^
+NameError: name 'input_num' is not defined. Did you mean: 'input_age'?
+>>>
+>>> def input_height(num):
+...     return num / float(input("Enter your height: "))
+... height1 = input_height(52.4)
+... height2 = input_height(48.4)
+... height3 = input_height(24.8)
+... height4 = input_height(52.6)
+... height5 = input_height(64.8)
+...
+Enter your height: 1.95
+Enter your height: 1.98
+Enter your height: 1.78
+Enter your height: 1.64
+Enter your height: 1.8
+>>> print(height1)
+26.871794871794872
+>>> print(height2)
+24.444444444444443
+>>> print(height3)
+13.932584269662922
+>>> print(height4)
+32.07317073170732
+>>> print(height5)
+36.0
+>>> def print_bmi(weight):
+...     return weight / (float(input("Enter your height in meters: ")) ** 2)
+... height1 = print_bmi(52.4)
+... height2 = print_bmi(48.4)
+... height3 = print_bmi(24.8)
+... height4 = print_bmi(52.6)
+... height5 = print_bmi(64.8)
+...
+Enter your height in meters: 1.95
+Enter your height in meters: 1.98
+Enter your height in meters: 1.78
+Enter your height in meters: 1.64
+Enter your height in meters: 1.8
+>>>
+>>> print (height1)
+13.780407626561473
+>>> print (height2)
+12.345679012345679
+>>> print (height3)
+7.827294533518495
+>>> print (height4)
+19.556811421772757
+>>> print (height5)
+19.999999999999996
+>>> def print_bmi(weight):
+...     return weight / (float(input("Enter your height in meters: ")) ** 2)
+... bmi1 = print_bmi(82.4)
+... bmi2 = print_bmi(78.4)
+... bmi3 = print_bmi(74.8)
+... bmi4 = print_bmi(72.6)
+... bmi5 = print_bmi(64.8)
+...
+Enter your height in meters: 1.8
+Enter your height in meters: 1.7
+Enter your height in meters: 1.75
+Enter your height in meters: 1.64
+Enter your height in meters: 1.94
+>>>
+>>> print(bmi1)
+25.432098765432098
+>>> print(bmi2)
+27.128027681660903
+>>> print(bmi3)
+24.424489795918365
+>>> print(bmi4)
+26.99286139202856
+>>> print(bmi5)
+17.21755765756191
+>>>
+>>>
+>>>
+>>>
+>>>
+>>> def bmi(weight, height):
+...     return (weight / (height * height))
+...
+>>> print (bmi(64.8, 1.94))
+17.21755765756191
+>>> print (bmi(88, 2))
+22.0
+>>> print ((78, 1.95))
+(78, 1.95)
+>>> print (bmi(78, 1.95))
+20.512820512820515
+>>> print (bmi(76, 1.8))
+23.456790123456788
+>>> print (bmi(74, 1.82))
+22.34029706557179
+>>> print (bmi(72, 1.81))
+21.97735111870822
+>>> print (bmi(height = 1.81, weight = 72))
+21.97735111870822
+>>> print (bmi(72, height = 1.81))
+21.97735111870822
+>>> print(bmi(weight = 72, 1.81))
+  File "<python-input-46>", line 1
+    print(bmi(weight = 72, 1.81))
+                               ^
+SyntaxError: positional argument follows keyword argument
+>>> print (bmi(weight = 72, 1.81))
+  File "<python-input-47>", line 1
+    print (bmi(weight = 72, 1.81))
+                                ^
+SyntaxError: positional argument follows keyword argument
+>>> print (bmi(72, height = 1.81))
+21.97735111870822
+>>>
+>>> def circumference(math.pi):
+  File "<python-input-50>", line 1
+    def circumference(math.pi):
+                          ^
+SyntaxError: invalid syntax
+>>> def circumference(Math.pi):
+  File "<python-input-51>", line 1
+    def circumference(Math.pi):
+                          ^
+SyntaxError: invalid syntax
+>>> def circumference(Math.PI):
+  File "<python-input-52>", line 1
+    def circumference(Math.PI):
+                          ^
+SyntaxError: invalid syntax
+>>> def circumference(Math.Pi):
+  File "<python-input-53>", line 1
+    def circumference(Math.Pi):
+                          ^
+SyntaxError: invalid syntax
+>>> def circumference(math.Pi):
+  File "<python-input-54>", line 1
+    def circumference(math.Pi):
+                          ^
+SyntaxError: invalid syntax
+>>> def circumference(math.PI):
+  File "<python-input-55>", line 1
+    def circumference(math.PI):
+                          ^
+SyntaxError: invalid syntax
+>>>
+>>> import math
+>>> def circumference(math.pi):
+  File "<python-input-58>", line 1
+    def circumference(math.pi):
+                          ^
+SyntaxError: invalid syntax
+>>> print (math.pi)
+3.141592653589793
+>>> def pi(3.14):
+  File "<python-input-60>", line 1
+    def pi(3.14):
+           ^^^^
+SyntaxError: invalid syntax
+>>> def pi_value(3.142):
+  File "<python-input-61>", line 1
+    def pi_value(3.142):
+                 ^^^^^
+SyntaxError: invalid syntax
+>>> def circumference(pi = math.pi):
+...     return circumference = 2 * pi * float(input("Enter the radius: ))
+...
+  File "<python-input-62>", line 2
+    return circumference = 2 * pi * float(input("Enter the radius: ))
+                                                ^
+SyntaxError: unterminated string literal (detected at line 2)
+>>> def circumference(pi = math.pi):
+...     return circumference = 2 * pi * float(input("Enter the radius: "))
+...
+  File "<python-input-63>", line 2
+    return circumference = 2 * pi * float(input("Enter the radius: "))
+                         ^
+SyntaxError: invalid syntax
+>>> def circumference(pi = math.pi):
+...     return 2 * pi * float(input("Enter the radius: "))
+...
+>>>
+>>> circumference()
+Enter the radius: 7
+43.982297150257104
+>>> circumference()
+Enter the radius: 3.142
+19.741768235158258
+>>> circumference()
+Enter the radius: 50
+314.1592653589793
+>>> circumference()
+Enter the radius: 70
+439.822971502571
+>>> circumference()
+Enter the radius: 77
+483.80526865282815
+>>> circumference(5)
+Enter the radius: 7
+70.0
+>>> def area(pi = math.pi):
+...     area = pi * (float(input("Enter the radius of the circle: ")) ** 2)
+...     print ("The area of the cicle is ", area)
+...
+>>> area()
+Enter the radius of the circle: 7
+The area of the cicle is  153.93804002589985
+>>> area()
+Enter the radius of the circle: 8
+The area of the cicle is  201.06192982974676
+>>> area()
+Enter the radius of the circle: 52
+The area of the cicle is  8494.8665353068
+>>> area()
+Enter the radius of the circle: math.pi
+Traceback (most recent call last):
+  File "<python-input-76>", line 1, in <module>
+    area()
+    ~~~~^^
+  File "<python-input-72>", line 2, in area
+    area = pi * (float(input("Enter the radius of the circle: ")) ** 2)
+                 ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: could not convert string to float: 'math.pi'
+>>> area()
+Enter the radius of the circle: 24
+The area of the cicle is  1809.5573684677208
+>>> def area(pi = math.pi):
+...     area = pi * (float(input("Enter the radius of the circle: ")) ** 2)
+...     if area < 20:
+...         print ("The cicle is too tiny")
+...         return
+...     print ("The area of the cicle is ", area)
+...
+>>> area()
+Enter the radius of the circle: 2
+The cicle is too tiny
+>>> area()
+Enter the radius of the circle: 50
+The area of the cicle is  7853.981633974483
+>>> def is_adult(age):
+...     if age >= 18:
+...         return True
+...
+>>> is_adult()
+Traceback (most recent call last):
+  File "<python-input-82>", line 1, in <module>
+    is_adult()
+    ~~~~~~~~^^
+TypeError: is_adult() missing 1 required positional argument: 'age'
+>>> is_adult(18)
+True
+>>> is_adult(20)
+True
+>>> is_adult(22)
+True
+>>> is_adult(25)
+True
+>>> is_adult(10)
+>>> is_adult(26)
+True
+>>> def is_even(num):
+...     if (num % 2 == 0):
+...         return True
+...
+>>> print(is_even)
+<function is_even at 0x000001A561B34D60>
+>>> print(is_even(8))
+True
+>>> print(is_even(5))
+None
+>>> print(is_adult(4))
+None
+>>> print(is_adult(20))
+True
+>>>
+>>> def circle_circumferences(radius_list):
+...     circumference_list = []
+...     pi = math.pi
+...     for radius in radius_list:
+...         circumference_list.append(radius * 2 * pi)
+...     return circumference_list
+...
+>>> print (circumference_list([7, 14, 21, 25, 28]))
+Traceback (most recent call last):
+  File "<python-input-97>", line 1, in <module>
+    print (circumference_list([7, 14, 21, 25, 28]))
+           ^^^^^^^^^^^^^^^^^^
+NameError: name 'circumference_list' is not defined. Did you mean: 'circumference'?
+>>> print (circumferences([7, 14, 21, 25, 28]))
+Traceback (most recent call last):
+  File "<python-input-98>", line 1, in <module>
+    print (circumferences([7, 14, 21, 25, 28]))
+           ^^^^^^^^^^^^^^
+NameError: name 'circumferences' is not defined. Did you mean: 'circumference'?
+>>> print (circle_circumferences([7, 14, 21, 25, 28]))
+[43.982297150257104, 87.96459430051421, 131.94689145077132, 157.07963267948966, 175.92918860102841]
+>>> print (circle_circumferences(5))
+Traceback (most recent call last):
+  File "<python-input-100>", line 1, in <module>
+    print (circle_circumferences(5))
+           ~~~~~~~~~~~~~~~~~~~~~^^^
+  File "<python-input-96>", line 4, in circle_circumferences
+    for radius in radius_list:
+                  ^^^^^^^^^^^
+TypeError: 'int' object is not iterable
+>>> print (circle_circumferences([4, 6, 8, 10, 11]))
+[25.132741228718345, 37.69911184307752, 50.26548245743669, 62.83185307179586, 69.11503837897544]
+>>> print (age)
+Traceback (most recent call last):
+  File "<python-input-102>", line 1, in <module>
+    print (age)
+           ^^^
+NameError: name 'age' is not defined. Did you mean: 'age1'?
+>>> print(age4)
+17
+>>> print(age2)
+22
+>>> print(age1)
+25
+>>> print(age5)
+28
+>>>
+>>> num1 = 11
+>>> def age():
+...     global age2
+...     age2 = 11
+...     Age = num1 * age2
+...     return age
+...
+>>> print(age)
+<function age at 0x000001A561B34EA0>
+>>> print(Age)
+Traceback (most recent call last):
+  File "<python-input-111>", line 1, in <module>
+    print(Age)
+          ^^^
+NameError: name 'Age' is not defined. Did you mean: 'age'?
+>>> print(age())
+<function age at 0x000001A561B34EA0>
+>>> age()
+<function age at 0x000001A561B34EA0>
+>>> age(11)
+Traceback (most recent call last):
+  File "<python-input-114>", line 1, in <module>
+    age(11)
+    ~~~^^^^
+TypeError: age() takes 0 positional arguments but 1 was given
+>>> def age():
+...     global age2
+...     age2 = 11
+...     Age = num1 * age2
+...     return Age
+...
+>>> age()
+121
+>>> print(age2)
+11
+>>> print(num1)
+11
+>>> print(age())
+121
+>>> 
