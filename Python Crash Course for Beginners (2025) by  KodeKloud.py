@@ -10560,4 +10560,541 @@ TypeError: age() takes 0 positional arguments but 1 was given
 11
 >>> print(age())
 121
->>> 
+>>> num = 10
+>>> def digit(n):
+...     n *= 11
+...     n += 1
+...     print ("The answer is ", n)
+...
+>>> digit (num)
+The answer is  111
+>>> print num
+  File "<python-input-3>", line 1
+    print num
+    ^^^^^^^^^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print(...)?
+>>> print(num)
+10
+>>> digit(11)
+The answer is  122
+>>> digit(num)
+The answer is  111
+>>>
+>>> digit(num)
+The answer is  111
+>>> digit(num)
+The answer is  111
+>>> digit(num)
+The answer is  111
+>>> digit(num)
+The answer is  111
+>>>
+>>>
+>>>
+>>>
+>>> digits = [1, 2, 3, 4, 5, 6]
+>>> def change_items(list):
+...     list[0] = 10
+...     list[1] = 20
+...     list[2] = 30
+...     list[4] = 44
+...
+>>> change_items(digits)
+>>> print(digits)
+[10, 20, 30, 4, 44, 6]
+>>>
+>>>
+>>>
+>>>
+>>> tuple1 = (10, 20, 30, 40, 50)
+>>> print(tuple1)
+(10, 20, 30, 40, 50)
+>>> print(tuple(2))
+Traceback (most recent call last):
+  File "<python-input-26>", line 1, in <module>
+    print(tuple(2))
+          ~~~~~^^^
+TypeError: 'int' object is not iterable
+>>> tuple2 = (1, 2, 3, 4, 5)
+>>> print(tuple)
+<class 'tuple'>
+>>> print(tuplw2)
+Traceback (most recent call last):
+  File "<python-input-29>", line 1, in <module>
+    print(tuplw2)
+          ^^^^^^
+NameError: name 'tuplw2' is not defined. Did you mean: 'tuple2'?
+>>> print(tuple2)
+(1, 2, 3, 4, 5)
+>>> for i in tuple2:
+...     print (i)
+...
+1
+2
+3
+4
+5
+>>> print(tuple2(0:2))
+  File "<python-input-32>", line 1
+    print(tuple2(0:2))
+                  ^
+SyntaxError: invalid syntax
+>>> print(tuple2[2])
+3
+>>> print(tuple2[0:2])
+(1, 2)
+>>> tuple1.append(7)
+Traceback (most recent call last):
+  File "<python-input-35>", line 1, in <module>
+    tuple1.append(7)
+    ^^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'append'
+>>> tuple1.append[7]
+Traceback (most recent call last):
+  File "<python-input-36>", line 1, in <module>
+    tuple1.append[7]
+    ^^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'append'
+>>> tuple1[2] = 10
+Traceback (most recent call last):
+  File "<python-input-37>", line 1, in <module>
+    tuple1[2] = 10
+    ~~~~~~^^^
+TypeError: 'tuple' object does not support item assignment
+>>> tuple = (1, 2)
+>>> print (tuple)
+(1, 2)
+>>> n = 20
+>>> s = "data"
+>>> d = 20.4
+>>> b = True
+>>> tuple = (11, n, s, d, b, True, "Information", 20.1, (tuple2), (10.4, 111.6))
+>>> print (tuple)
+(11, 20, 'data', 20.4, True, True, 'Information', 20.1, (1, 2, 3, 4, 5), (10.4, 111.6))
+>>> tup = 10, 15, 24, 25
+>>> print(tup)
+(10, 15, 24, 25)
+>>> tupl = (10)
+>>> print (tupl)
+10
+>>> tupl += 6
+>>> print (tupl)
+16
+>>> tuple4 = (10,)
+>>> print(tuple4)
+(10,)
+>>> tuple4 += 6
+Traceback (most recent call last):
+  File "<python-input-54>", line 1, in <module>
+    tuple4 += 6
+TypeError: can only concatenate tuple (not "int") to tuple
+>>> tuple4 = tuple4 + (10, 20)
+>>> print(tuple4)
+(10, 10, 20)
+>>> tuple5 = 25, 22
+>>> print (tuple5)
+(25, 22)
+>>> tuple6 = tuple5 + (26, 23)
+>>> print (tuple6)
+(25, 22, 26, 23)
+>>>
+>>> diction = {
+... "Kavindu": "5678",
+... "Tharindi": "1234",
+... "Nethmi": "HCLTech",
+... "User": "Use1234"
+... }
+>>> print (diction)
+{'Kavindu': '5678', 'Tharindi': '1234', 'Nethmi': 'HCLTech', 'User': 'Use1234'}
+>>> print (diction["Nethmi"])
+HCLTech
+>>> print (diction["Tharindi"])
+1234
+>>> print (diction["Use1234"])
+Traceback (most recent call last):
+  File "<python-input-66>", line 1, in <module>
+    print (diction["Use1234"])
+           ~~~~~~~^^^^^^^^^^^
+KeyError: 'Use1234'
+>>> print(diction["Nethmi"])
+HCLTech
+>>> print(diction["Kavindu"])
+5678
+>>> print (diction.keys(2))
+Traceback (most recent call last):
+  File "<python-input-69>", line 1, in <module>
+    print (diction.keys(2))
+           ~~~~~~~~~~~~^^^
+TypeError: dict.keys() takes no arguments (1 given)
+>>> diction.keys()
+dict_keys(['Kavindu', 'Tharindi', 'Nethmi', 'User'])
+>>> diction.values()
+dict_values(['5678', '1234', 'HCLTech', 'Use1234'])
+>>> diction.items()
+dict_items([('Kavindu', '5678'), ('Tharindi', '1234'), ('Nethmi', 'HCLTech'), ('User', 'Use1234')])
+>>> print(diction.keys())
+dict_keys(['Kavindu', 'Tharindi', 'Nethmi', 'User'])
+>>> diction.keys(1)
+Traceback (most recent call last):
+  File "<python-input-74>", line 1, in <module>
+    diction.keys(1)
+    ~~~~~~~~~~~~^^^
+TypeError: dict.keys() takes no arguments (1 given)
+>>> print(diction.values())
+dict_values(['5678', '1234', 'HCLTech', 'Use1234'])
+>>> print(diction.items())
+dict_items([('Kavindu', '5678'), ('Tharindi', '1234'), ('Nethmi', 'HCLTech'), ('User', 'Use1234')])
+>>> for key in diction.keys():
+...     print (key + "$" + diction[key])
+...
+Kavindu$5678
+Tharindi$1234
+Nethmi$HCLTech
+User$Use1234
+>>> for key in diction.keys():
+...     print (key + " $ " + diction[key])
+...
+Kavindu $ 5678
+Tharindi $ 1234
+Nethmi $ HCLTech
+User $ Use1234
+>>> diction["user"] = "Kivindi"
+>>> print(diction)
+{'Kavindu': '5678', 'Tharindi': '1234', 'Nethmi': 'HCLTech', 'User': 'Use1234', 'user': 'Kivindi'}
+>>> diction["User"] = "Kivindi"
+>>> print(diction["User"])
+Kivindi
+>>> print (diction)
+{'Kavindu': '5678', 'Tharindi': '1234', 'Nethmi': 'HCLTech', 'User': 'Kivindi', 'user': 'Kivindi'}
+>>> diction.update({"Emma": "Watson"})
+>>> print(diction)
+{'Kavindu': '5678', 'Tharindi': '1234', 'Nethmi': 'HCLTech', 'User': 'Kivindi', 'user': 'Kivindi', 'Emma': 'Watson'}
+>>> del diction["User"]
+>>> print (diction)
+{'Kavindu': '5678', 'Tharindi': '1234', 'Nethmi': 'HCLTech', 'user': 'Kivindi', 'Emma': 'Watson'}
+>>> diction.clear()
+>>> print(diction)
+{}
+>>> diction.popitem()
+Traceback (most recent call last):
+  File "<python-input-90>", line 1, in <module>
+    diction.popitem()
+    ~~~~~~~~~~~~~~~^^
+KeyError: 'popitem(): dictionary is empty'
+>>> diction = {
+... ... "Kavindu": "5678",
+... ... "Tharindi": "1234",
+... ... "Nethmi": "HCLTech",
+... ... "User": "Use1234"
+... ... }
+...
+  File "<python-input-91>", line 2
+    ... "Kavindu": "5678",
+    ^^^^^^^^^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+>>> diction = {
+... "Kavindu": "5678",
+... "Tharindi": "1234",
+... "Nethmi": "HCLTech",
+... "User": "Use1234"
+... }
+>>> print (diction)
+{'Kavindu': '5678', 'Tharindi': '1234', 'Nethmi': 'HCLTech', 'User': 'Use1234'}
+>>> diction.popitem()
+('User', 'Use1234')
+>>> print(diction)
+{'Kavindu': '5678', 'Tharindi': '1234', 'Nethmi': 'HCLTech'}
+>>> diction_copy = diction.copy()
+>>> print(diction_copy)
+{'Kavindu': '5678', 'Tharindi': '1234', 'Nethmi': 'HCLTech'}
+>>> try:
+...  name = "Kavindu"
+...  print ("My name is " + nae)
+... except:
+...  print("You did a bug in the code")
+...
+You did a bug in the code
+>>> try:
+...  name = "Kavindu"
+...  print ("My name is " + nae)
+... except:
+...  print("You did a bug in the code")
+... print ("All Done!")
+...
+You did a bug in the code
+All Done!
+>>> try:
+...  name = "Kavindu"
+...  print ("My name is " + name)
+... except:
+...  print("You did a bug in the code")
+... print ("All Done!")
+...
+My name is Kavindu
+All Done!
+>>>
+>>> i = int(input("Enter a Integer: "))
+Enter a Integer:
+Traceback (most recent call last):
+  File "<python-input-102>", line 1, in <module>
+    i = int(input("Enter a Integer: "))
+ValueError: invalid literal for int() with base 10: ''
+>>> i = int(input("Enter a Integer: "));\
+... y = 1 / x
+Enter a Integer: 4
+Traceback (most recent call last):
+  File "<python-input-103>", line 2, in <module>
+    y = 1 / x
+            ^
+NameError: name 'x' is not defined
+>>> 4
+4
+>>> i = int(input("Enter a Integer: "));\
+... y = 1 / i ;\
+... print (y)
+Enter a Integer: 10
+0.1
+>>> try:
+...  i = int(input("Enter a number: "))
+...  ans = 1 / i
+...  print (y)
+... except ZeroDivisionError:
+...  print ("You Can't divide by Zero")
+... except ValueError:
+...  print ("Please enter an integer")
+... except TypeError:
+...  print ("You can't divde 1 by a string")
+... except:
+...  print ("Something went wrong")
+... print ("Program Completed Successfully!")
+...
+Enter a number: 10
+0.1
+Program Completed Successfully!
+>>> 10
+10
+>>> try:
+...  i = int(input("Enter a number: "))
+...  ans = 1 / i
+...  print (y)
+... except ZeroDivisionError:
+...  print ("You Can't divide by Zero")
+... except ValueError:
+...  print ("Please enter an integer")
+... except TypeError:
+...  print ("You can't divde 1 by a string")
+... except:
+...  print ("Something went wrong")
+... print ("Program Completed Successfully!")
+...
+Enter a number: 0
+You Can't divide by Zero
+Program Completed Successfully!
+>>> try:
+...  i = int(input("Enter a number: "))
+...  ans = 1 / i
+...  print (y)
+... except ZeroDivisionError:
+...  print ("You Can't divide by Zero")
+... except ValueError:
+...  print ("Please enter an integer")
+... except TypeError:
+...  print ("You can't divde 1 by a string")
+... except:
+...  print ("Something went wrong")
+... print ("Program Completed Successfully!")
+...
+Enter a number: 10.2
+Please enter an integer
+Program Completed Successfully!
+>>> try:
+...  i = int(input("Enter a number: "))
+...  ans = 1 / i
+...  print (y)
+... except ZeroDivisionError:
+...  print ("You Can't divide by Zero")
+... except ValueError:
+...  print ("Please enter an integer")
+... except TypeError:
+...  print ("You can't divde 1 by a string")
+... except:
+...  print ("Something went wrong")
+... print ("Program Completed Successfully!")
+...
+Enter a number: s
+Please enter an integer
+Program Completed Successfully!
+>>> try:
+...  i = int(input("Enter a number: "))
+...  ans = 1 / i
+...  print (y)
+... except ZeroDivisionError:
+...  print ("You Can't divide by Zero")
+... except ValueError:
+...  print ("Please enter an integer")
+... except TypeError:
+...  print ("You can't divde 1 by a string")
+... except:
+...  print ("Something went wrong")
+... print ("Program Completed Successfully!")
+...
+Enter a number: 5 +j
+Please enter an integer
+Program Completed Successfully!
+>>> try:
+...  i = int(input("Enter a number: "))
+...  ans = 1 / i
+...  print (y)
+... except ZeroDivisionError:
+...  print ("You Can't divide by Zero")
+... except ValueError:
+...  print ("Please enter an integer")
+... except TypeError:
+...  print ("You can't divde 1 by a string")
+... except:
+...  print ("Something went wrong")
+... print ("Program Completed Successfully!")
+...
+Enter a number: df 5
+Please enter an integer
+Program Completed Successfully!
+>>> try:
+...  i = int(input("Enter a number: "))
+...  ans = 1 / i
+...  print (y)
+... except ZeroDivisionError:
+...  print ("You Can't divide by Zero")
+... except ValueError:
+...  print ("Please enter an integer")
+... except TypeError:
+...  print ("You can't divde 1 by a string")
+... except:
+...  print ("Something went wrong")
+... print ("Program Completed Successfully!")
+...
+Enter a number: adfs+fd+55
+Please enter an integer
+Program Completed Successfully!
+>>> try:
+...  i = int(input("Enter a number: "))
+...  ans = 1 / i
+...  print (y)
+... except ZeroDivisionError:
+...  print ("You Can't divide by Zero")
+... except ValueError:
+...  print ("Please enter an integer")
+... except TypeError:
+...  print ("You can't divde 1 by a string")
+... except:
+...  print ("Something went wrong")
+... print ("Program Completed Successfully!")
+...
+Enter a number:
+Please enter an integer
+Program Completed Successfully!
+>>> try:
+...  i = int(input("Enter a number: "))
+...  ans = 1 / i
+...  print (y)
+... except ZeroDivisionError:
+...  print ("You Can't divide by Zero")
+... except ValueError:
+...  print ("Please enter an integer")
+... except TypeError:
+...  print ("You can't divde 1 by a string")
+... except:
+...  print ("Something went wrong")
+... print ("Program Completed Successfully!")
+...
+Enter a number: -5
+0.1
+Program Completed Successfully!
+>>>
+>>> try:
+...  i = int(input("Enter a number: "))
+...  ans = 1 / i
+...  print (y)
+... except ZeroDivisionError:
+...  print ("You Can't divide by Zero")
+... except ValueError:
+...  print ("Please enter an integer")
+... except TypeError:
+...  print ("You can't divde 1 by a string")
+... except:
+...  print ("Something went wrong")
+... print ("Program Completed Successfully!")
+...
+Enter a number: 5
+0.1
+Program Completed Successfully!
+>>> try:
+...  i = int(input("Enter a number: "))
+...  ans = 1 / i
+...  print (y)
+... except ZeroDivisionError:
+...  print ("You Can't divide by Zero")
+... except ValueError:
+...  print ("Please enter an integer")
+... except TypeError:
+...  print ("You can't divde 1 by a string")
+... except:
+...  print ("Something went wrong")
+... print ("Program Completed Successfully!")
+...
+Enter a number: 4
+0.1
+Program Completed Successfully!
+>>> try:
+...  i = int(input("Enter a number: "))
+...  ans = 1 / i
+...  print (y)
+... except ArithmeticError:
+...  print ("There is an arithmetic error")
+... except:
+...  print ("Something went wrong")
+... print ("Program Completed Successfully!")
+...
+Enter a number: 4
+0.1
+Program Completed Successfully!
+>>> try:
+...  i = int(input("Enter a number: "))
+...  ans = 1 / i
+...  print (y)
+... except ArithmeticError:
+...  print ("There is an arithmetic error")
+... except:
+...  print ("Something went wrong")
+... print ("Program Completed Successfully!")
+...
+Enter a number: 0
+There is an arithmetic error
+Program Completed Successfully!
+>>> try:
+...  i = int(input("Enter a number: "))
+...  ans = 1 / i
+...  print (y)
+... except (ZeroDivisionError, TypeError):
+...  print ("Insert an integer")
+... except:
+...  print ("Something went wrong")
+... print ("Program Completed Successfully!")
+...
+Enter a number: 4
+0.1
+Program Completed Successfully!
+>>>
+>>> try:
+...  i = int(input("Enter a number: "))
+...  ans = 1 / i
+...  print (y)
+... except (ZeroDivisionError, TypeError):
+...  print ("Insert an integer")
+... except:
+...  print ("Something went wrong")
+... print ("Program Completed Successfully!")
+...
+Enter a number: 0
+Insert an integer
+Program Completed Successfully!
+>>>
