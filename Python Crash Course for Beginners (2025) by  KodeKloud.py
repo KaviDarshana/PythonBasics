@@ -11097,4 +11097,711 @@ Program Completed Successfully!
 Enter a number: 0
 Insert an integer
 Program Completed Successfully!
+>>> try:
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+...     print(y)
+... except ArithmeticError:
+...     print ("Calculation Failed.")
+... except:
+...     print ("Something went wrong")
+... print ("Program completed successfully!")
+...
+Enter a number: 10
+2.0
+Program completed successfully!
+>>> try:
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+...     print(y)
+... except ArithmeticError:
+...     print ("Calculation Failed.")
+... except:
+...     print ("Something went wrong")
+... print ("Program completed successfully!")
+...
+Enter a number: 5
+4.0
+Program completed successfully!
+>>> try:
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+...     print(y)
+... except ArithmeticError:
+...     print ("Calculation Failed.")
+... except ZeroDivisionError:
+...     print ("You cannot divide 20 by zero")
+... except:
+...     print ("Something went wrong")
+... print ("Program completed successfully!")
+...
+Enter a number: 5
+4.0
+Program completed successfully!
+>>> try:
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+...     print(y)
+... except ArithmeticError:
+...     print ("Calculation Failed.")
+... except ZeroDivisionError:
+...     print ("You cannot divide 20 by zero")
+... except:
+...     print ("Something went wrong")
+... print ("Program completed successfully!")
+...
+Enter a number: 0
+Calculation Failed.
+Program completed successfully!
+>>> try:
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+...     print(y)
+... except ZeroDivisionError:
+...     print ("You cannot divide 20 by zero.")
+... except ArithmeticError:
+...     print ("Calculation failed.")
+... except:
+...     print ("Something went wrong")
+... print ("Program completed successfully!")
+...
+Enter a number: 1
+20.0
+Program completed successfully!
 >>>
+>>> try:
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+...     print(y)
+... except ZeroDivisionError:
+...     print ("You cannot divide 20 by zero.")
+... except ArithmeticError:
+...     print ("Calculation failed.")
+... except:
+...     print ("Something went wrong")
+... print ("Program completed successfully!")
+...
+Enter a number: 0
+You cannot divide 20 by zero.
+Program completed successfully!
+>>> try:
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+...     print(y)
+... except ZeroDivisionError:
+...     print ("You cannot divide 20 by zero.")
+... except ArithmeticError:
+...     print ("Calculation failed.")
+... except:
+...     print ("Something went wrong")
+... print ("Program completed successfully!")
+...
+Enter a number: 3.2
+Something went wrong
+Program completed successfully!
+>>> try:
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+...     print(y)
+... except (ZeroDivisionError, ValueError):
+...     print ("Invalid input.")
+... except ArithmeticError:
+...     print ("Calculation failed.")
+... except:
+...     print ("Something went wrong")
+... print ("Program completed successfully!")
+...
+Enter a number: 4
+5.0
+Program completed successfully!
+>>> try:
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+...     print(y)
+... except (ZeroDivisionError, ValueError):
+...     print ("Invalid input.")
+... except ArithmeticError:
+...     print ("Calculation failed.")
+... except:
+...     print ("Something went wrong")
+... print ("Program completed successfully!")
+...
+Enter a number: 0
+Invalid input.
+Program completed successfully!
+>>> try:
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+...     print(y)
+... except (ZeroDivisionError, ValueError):
+...     print ("Invalid input.")
+... except ArithmeticError:
+...     print ("Calculation failed.")
+... except:
+...     print ("Something went wrong")
+... print ("Program completed successfully!")
+...
+Enter a number: 5
+4.0
+Program completed successfully!
+>>> try:
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+...     print(y)
+... except (ZeroDivisionError, ValueError):
+...     print ("Invalid input.")
+... except ArithmeticError:
+...     print ("Calculation failed.")
+... except:
+...     print ("Something went wrong")
+... print ("Program completed successfully!")
+...
+Enter a number: 5.6
+Invalid input.
+Program completed successfully!
+>>>
+>>>
+>>>
+>>>
+>>> def calc():
+...     try:
+...         x = int(input("Enter a number"))
+...         y = 20 / x
+...         print (y)
+...     except ZeroDivisionError:
+...         print ("You can't divide 20 by zero")
+...     except:
+...         print ("Something went Wrong!")
+...     return none
+...
+>>> calc()
+Enter a number10
+2.0
+Traceback (most recent call last):
+  File "<python-input-17>", line 1, in <module>
+    calc()
+    ~~~~^^
+  File "<python-input-16>", line 10, in calc
+    return none
+           ^^^^
+NameError: name 'none' is not defined. Did you mean: 'None'?
+>>> def calc():
+...     try:
+...         x = int(input("Enter a number"))
+...         y = 20 / x
+...         print (y)
+...     except ZeroDivisionError:
+...         print ("You can't divide 20 by zero")
+...     except:
+...         print ("Something went Wrong!")
+...     return None
+...
+>>> calc()
+Enter a number10
+2.0
+>>> calc()
+Enter a number0
+You can't divide 20 by zero
+>>> calc()
+Enter a number6.5
+Something went Wrong!
+>>> calc()
+Enter a number11
+1.8181818181818181
+>>> def calc():
+...     try:
+...         x = int(input("Enter a number"))
+...         int(y = 20 / x)
+...         print (y)
+...     except ZeroDivisionError:
+...         print ("You can't divide 20 by zero")
+...     except:
+...         print ("Something went Wrong!")
+...     return None
+...
+>>> calc()
+Enter a number10
+Something went Wrong!
+>>> def calc():
+...     try:
+...         x = int(input("Enter a number: "))
+...         (y = 20 / x
+...         print (y)
+...     except ZeroDivisionError:
+...         print ("You can't divide 20 by zero")
+...     except:
+...         print ("Something went Wrong!")
+...     return None
+...
+  File "<python-input-25>", line 4
+    (y = 20 / x
+    ^
+SyntaxError: '(' was never closed
+>>> def calc():
+...     try:
+...         x = int(input("Enter a number: "))
+...         y = 20 / x
+...         print (y)
+...     except ZeroDivisionError:
+...         print ("You can't divide 20 by zero")
+...     except:
+...         print ("Something went Wrong!")
+...     return None
+...
+>>> calc()
+Enter a number: 20
+1.0
+>>> calc()
+Enter a number: 10
+2.0
+>>>
+>>>
+>>>
+>>>
+>>> def calculation()
+  File "<python-input-33>", line 1
+    def calculation()
+                     ^
+SyntaxError: expected ':'
+>>>
+>>>
+>>>
+>>>
+>>> def calculation():
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+... ;\
+... try:
+...     print (y)
+... except ZeroDivisionError:
+...     print ("You can't divide 20 by zero")
+... except:
+...     print ("Something went wrong.")
+... return None
+...
+  File "<python-input-38>", line 4
+    ;\
+    ^
+SyntaxError: invalid syntax
+>>> def calculation():
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+... try:
+...     print (y)
+... except ZeroDivisionError:
+...     print ("You can't divide 20 by zero")
+... except:
+...     print ("Something went wrong.")
+... return None
+...
+4.0
+  File "<python-input-39>", line 10
+    return None
+    ^^^^^^^^^^^
+SyntaxError: 'return' outside function
+>>> def calculation():
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+... try:
+...     print (y)
+... except ZeroDivisionError:
+...     print ("You can't divide 20 by zero")
+... except:
+...     print ("Something went wrong.")
+...
+4.0
+>>> def calculation():
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+... try:
+...     print (y)
+... except ZeroDivisionError:
+...     print ("You can't divide 20 by zero")
+... except:
+...     print ("Something went wrong.")
+...
+4.0
+>>> def calculation():
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+...     print (y)
+...     return None
+... try:
+...     calculation()
+... except ZeroDivisionError:
+...     print ("You can't divide 20 by zero")
+... except:
+...     print ("Something went wrong.")
+...
+Enter a number: 10
+2.0
+>>> def calculation():
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+...     print (y)
+...     return None
+... try:
+...     calculation()
+... except ZeroDivisionError:
+...     print ("You can't divide 20 by zero")
+... except:
+...     print ("Something went wrong.")
+...
+Enter a number: 1.8
+Something went wrong.
+>>>
+>>> def calculation():
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+...     print (y)
+...     return None
+... try:
+...     calculation()
+... except ZeroDivisionError:
+...     print ("You can't divide 20 by zero")
+... except:
+...     print ("Something went wrong.")
+...
+Enter a number: 0
+You can't divide 20 by zero
+>>> def calculation():
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+...     print (y)
+...     return None
+... try:
+...     calculation()
+... except ZeroDivisionError:
+...     print ("You can't divide 20 by zero")
+... except:
+...     print ("Something went wrong.")
+...
+Enter a number: d
+Something went wrong.
+>>>
+>>>
+>>> def calculation():
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+...     print (y)
+...     return None
+... try:
+...     calculation()
+... except ZeroDivisionError:
+...     print ("You can't divide 20 by zero")
+... except:
+...     print ("Something went wrong.")
+...
+Enter a number: 4
+5.0
+>>> def calculation():
+...     raise ZeroDivisionError
+... try:
+...     calculation()
+... except ZeroDivisionError:
+...     print ("You can't divide 20 by zero")
+... except:
+...     print ("Something went wrong.")
+...
+You can't divide 20 by zero
+>>> def calculation():
+...     raise ZeroDivisionError
+...     x = int(input("Enter a number: "))
+...     y = 20 / x
+...     print (y)
+...     return None
+... try:
+...     calculation()
+... except ZeroDivisionError:
+...     print ("You can't divide 20 by zero")
+... except:
+...     print ("Something went wrong.")
+...
+You can't divide 20 by zero
+>>> def calculation():
+...     try:
+...         x = int(input("Enter a number: "))
+...         y = 1 / x
+...         print(y)
+...     except:
+...         print("Something else went wrong")
+...         raise
+...     return None
+...
+>>> calculation()
+Enter a number: 1
+1.0
+>>> calculation()
+Enter a number: 2
+0.5
+>>> calculation()0
+  File "<python-input-55>", line 1
+    calculation()0
+                 ^
+SyntaxError: invalid syntax
+>>> calculation()
+Enter a number: 0
+Something else went wrong
+Traceback (most recent call last):
+  File "<python-input-56>", line 1, in <module>
+    calculation()
+    ~~~~~~~~~~~^^
+  File "<python-input-52>", line 4, in calculation
+    y = 1 / x
+        ~~^~~
+ZeroDivisionError: division by zero
+>>> calculation()
+Enter a number: 0
+Something else went wrong
+Traceback (most recent call last):
+  File "<python-input-57>", line 1, in <module>
+    calculation()
+    ~~~~~~~~~~~^^
+  File "<python-input-52>", line 4, in calculation
+    y = 1 / x
+        ~~^~~
+ZeroDivisionError: division by zero
+>>> calculation()
+Enter a number: 3.5
+Something else went wrong
+Traceback (most recent call last):
+  File "<python-input-58>", line 1, in <module>
+    calculation()
+    ~~~~~~~~~~~^^
+  File "<python-input-52>", line 3, in calculation
+    x = int(input("Enter a number: "))
+ValueError: invalid literal for int() with base 10: '3.5'
+>>> calculation()
+Enter a number: e
+Something else went wrong
+Traceback (most recent call last):
+  File "<python-input-59>", line 1, in <module>
+    calculation()
+    ~~~~~~~~~~~^^
+  File "<python-input-52>", line 3, in calculation
+    x = int(input("Enter a number: "))
+ValueError: invalid literal for int() with base 10: 'e'
+>>> calculation()
+Enter a number: 4
+0.25
+>>>
+>>>
+>>> def calc():
+...     try:
+...         x = int(input("Enter a number: "))
+...         y = 20 / x
+...         print(y)
+...     except:
+...         print("Something went wrong")
+...         raise
+...     return None
+... try:
+...     calc()
+... except ZeroDivisionError:
+...     print ("You can't divide by zero")
+... except:
+...     print ("Something went wrong.")
+...
+Enter a number: 10
+2.0
+>>> def calc():
+...     try:
+...         x = int(input("Enter a number: "))
+...         y = 20 / x
+...         print(y)
+...     except:
+...         print("Something went wrong")
+...         raise
+...     return None
+... try:
+...     calc()
+... except ZeroDivisionError:
+...     print ("You can't divide by zero")
+... except:
+...     print ("Something went wrong.")
+...
+Enter a number: 0
+Something went wrong
+You can't divide by zero
+>>> def calc():
+...     try:
+...         x = int(input("Enter a number: "))
+...         y = 20 / x
+...         print(y)
+...     except:
+...         print("Something went wrong")
+...         raise
+...     return None
+... try:
+...     calc()
+... except ZeroDivisionError:
+...     print ("You can't divide by zero")
+... except:
+...     print ("Something went wrong.")
+...
+Enter a number: k
+Something went wrong
+Something went wrong.
+>>> def calc():
+...     try:
+...         x = int(input("Enter a number: "))
+...         y = 20 / x
+...         print(y)
+...     except:
+...         print("Something went wrong")
+...         raise
+...     return None
+... try:
+...     calc()
+... except ZeroDivisionError:
+...     print ("You can't divide by zero")
+... except:
+...     print ("Something went wrong.")
+...
+Enter a number: 5.6
+Something went wrong
+Something went wrong.
+>>> def calc():
+...     try:
+...         x = int(input("Enter a number: "))
+...         y = 20 / x
+...         print(y)
+...     except:
+...         print("Something went wrong")
+...         raise
+...     return None
+... try:
+...     calc()
+... except ZeroDivisionError:
+...     print ("You can't divide by zero")
+... except:
+...     print ("Something went wrong.")
+...
+Enter a number: 4
+5.0
+>>>
+>>> import math
+>>>
+>>> x = int(input("Enter a number: "))
+Enter a number: 4
+>>> import math
+>>>
+>>> x = int(input("Enter a number: ")) ;\
+... assert x >= 0
+Enter a number: 4
+>>>
+>>> x = int(input("Enter a number: ")) ;\
+... assert x >= 0 ;\
+... x = math.sqrt(x)
+Enter a number: 4
+>>>
+>>>
+>>>
+>>> import math
+>>>
+>>> x = int(input("Enter a number: ")) ;\
+... assert x >= 0 ;\
+... x = math.sqrt(x) ;\
+... print ("Result is ", x)
+Enter a number: 4
+Result is  2.0
+>>> x = int(input("Enter a number: ")) ;\
+... assert x >= 0 ;\
+... x = math.sqrt(x) ;\
+... print ("Result is ", x)
+Enter a number: 7
+Result is  2.6457513110645907
+>>> x = int(input("Enter a number: ")) ;\
+... assert x >= 0 ;\
+... x = math.sqrt(x) ;\
+... print ("Result is ", x)
+Enter a number: -5
+Traceback (most recent call last):
+  File "<python-input-84>", line 2, in <module>
+    assert x >= 0 ;\
+           ^^^^^^
+AssertionError
+>>> x = int(input("Enter a number: ")) ;\
+... assert x >= 0 ;\
+... x = math.sqrt(x) ;\
+... print ("Result is ", x)
+Enter a number: 2.5
+Traceback (most recent call last):
+  File "<python-input-85>", line 1, in <module>
+    x = int(input("Enter a number: ")) ;\
+        ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: '2.5'
+>>> x = float(input("Enter a number: ")) ;\
+... assert x >= 0 ;\
+... x = math.sqrt(x) ;\
+... print ("Result is ", x)
+Enter a number: 2.5
+Result is  1.5811388300841898
+>>> x = float(input("Enter a number: ")) ;\
+... assert x >= 0 ;\
+... x = math.sqrt(x) ;\
+... print ("Result is ", x)
+Enter a number: 0
+Result is  0.0
+>>> x = float(input("Enter a number: ")) ;\
+... assert x >= 0 ;\
+... x = math.sqrt(x) ;\
+... print ("Result is ", x)
+Enter a number: -5
+Traceback (most recent call last):
+  File "<python-input-88>", line 2, in <module>
+    assert x >= 0 ;\
+           ^^^^^^
+AssertionError
+>>> x = float(input("Enter a number: ")) ;\
+... assert x <= 0 ;\
+... x = math.sqrt(x) ;\
+... print ("Result is ", x)
+Enter a number: -5
+Traceback (most recent call last):
+  File "<python-input-89>", line 3, in <module>
+    x = math.sqrt(x) ;\
+        ~~~~~~~~~^^^
+ValueError: math domain error
+>>> x = float(input("Enter a number: ")) ;\
+... assert x >= 0 ;\
+... x = math.sqrt(x) ;\
+... print ("Result is ", x)
+Enter a number: 10
+Result is  3.1622776601683795
+>>> x = float(input("Enter a number: ")) ;\
+... assert x >= 0 ;\
+... x = math.sqrt(x) ;\
+... print ("Result is ", x)
+Enter a number: 100
+Result is  10.0
+>>> x = float(input("Enter a number: ")) ;\
+... assert x >= 0 ;\
+... x = math.sqrt(x) ;\
+... print ("Result is ", x)
+Enter a number: 121
+Result is  11.0
+>>> x = float(input("Enter a number: ")) ;\
+... assert x >= 0 ;\
+... x = math.sqrt(x) ;\
+... print ("Result is ", x)
+Enter a number: 111
+Result is  10.535653752852738
+>>> 111
+111
+>>> x = float(input("Enter a number: ")) ;\
+... assert x >= 0 ;\
+... x = math.sqrt(x) ;\
+... print ("Result is ", x)
+Enter a number: 121.121
+Result is  11.005498625687071
+>>> x = float(input("Enter a number: ")) ;\
+... assert x >= 0 ;\
+... x = math.sqrt(x) ;\
+... print ("Result is ", x)
+Enter a number: 123.21
+Result is  11.1
+>>> tup = (10, 20, 30,40, 50)
+>>> print (tup[0:1])
+(10,)
+>>> 
