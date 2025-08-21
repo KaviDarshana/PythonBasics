@@ -1,0 +1,2 @@
+This text is written to test the write method in Python. 
+ File handling is essential for data management and it is easy to carry out with Python.
